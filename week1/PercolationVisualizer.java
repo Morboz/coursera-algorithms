@@ -16,10 +16,10 @@
  *
  ******************************************************************************/
 
-import java.awt.Font;
-
 import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdDraw;
+
+import java.awt.*;
 
 public class PercolationVisualizer {
 
@@ -56,7 +56,7 @@ public class PercolationVisualizer {
         StdDraw.setFont(new Font("SansSerif", Font.PLAIN, 12));
         StdDraw.setPenColor(StdDraw.BLACK);
         StdDraw.text(0.25*n, -0.025*n, opened + " open sites");
-        if (perc.percolates()) StdDraw.text(0.75*n, -0.02        5*n, "percolates");
+        if (perc.percolates()) StdDraw.text(0.75*n, -0.025*n, "percolates");
         else                   StdDraw.text(0.75*n, -0.025*n, "does not percolate");
 
     }
